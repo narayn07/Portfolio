@@ -19,7 +19,7 @@ A personal portfolio website built with React. Features an immersive dark UI wit
 ## Run Locally
 
 ```bash
-cd client
+cd Portfolio
 npm install
 npm start
 ```
