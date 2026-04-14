@@ -44,7 +44,7 @@ export default function About() {
 
             {/* photo */}
             <img
-              src="/nara.jpg"
+              src="/nara.jpeg"
               alt="Narayn Prabhu"
               className="about-img"
             />
