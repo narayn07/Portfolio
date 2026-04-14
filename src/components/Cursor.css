@@ -1,0 +1,52 @@
+/* hide default cursor only on the page itself, not in devtools */
+html, body, *:not(input):not(textarea) { cursor: none !important; }
+input, textarea { cursor: text !important; }
+
+.c-dot {
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  will-change: left, top;
+  transition: opacity 0.2s;
+  mix-blend-mode: difference;
+}
+
+.c-blob {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999998;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  will-change: left, top;
+  transform: translate(-50%, -50%);
+  transition:
+    width  0.4s cubic-bezier(.23,1,.32,1),
+    height 0.4s cubic-bezier(.23,1,.32,1),
+    border-color 0.3s,
+    background   0.3s,
+    opacity      0.2s;
+  mix-blend-mode: difference;
+}
+
+.c-blob.hover {
+  width: 64px;
+  height: 64px;
+  border-color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.05);
+}
+
+.c-blob.press {
+  width: 20px;
+  height: 20px;
+  border-color: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.12);
+  transition-duration: 0.1s;
+}
