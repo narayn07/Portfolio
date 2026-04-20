@@ -28,23 +28,6 @@ const logos = {
   Tailwind:   <svg viewBox="0 0 128 128"><path fill="#38bdf8" d="M64 16c-17.1 0-27.8 8.5-32 25.6 6.4-8.5 13.9-11.7 22.4-9.6 4.9 1.2 8.3 4.7 12.2 8.6C72.7 47 79.8 54.4 96 54.4c17.1 0 27.8-8.5 32-25.6-6.4 8.5-13.9 11.7-22.4 9.6-4.9-1.2-8.3-4.7-12.2-8.6C87.3 23.4 80.2 16 64 16zM32 54.4C14.9 54.4 4.2 62.9 0 80c6.4-8.5 13.9-11.7 22.4-9.6 4.9 1.2 8.3 4.7 12.2 8.6 6.1 6.4 13.2 13.8 29.4 13.8 17.1 0 27.8-8.5 32-25.6-6.4 8.5-13.9 11.7-22.4 9.6-4.9-1.2-8.3-4.7-12.2-8.6C55.3 61.8 48.2 54.4 32 54.4z"/></svg>,
 };
 
-const techs = [
-  { name: 'React',      color: '#61dafb', docs: 'https://react.dev' },
-  { name: 'Node.js',    color: '#83cd29', docs: 'https://nodejs.org/docs' },
-  { name: 'Python',     color: '#3776ab', docs: 'https://docs.python.org' },
-  { name: 'Java',       color: '#ea2d2e', docs: 'https://docs.oracle.com/en/java' },
-  { name: 'MongoDB',    color: '#589636', docs: 'https://www.mongodb.com/docs' },
-  { name: 'MySQL',      color: '#00758f', docs: 'https://dev.mysql.com/doc' },
-  { name: 'TypeScript', color: '#3178c6', docs: 'https://www.typescriptlang.org/docs' },
-  { name: 'JavaScript', color: '#f7df1e', docs: 'https://developer.mozilla.org/docs/Web/JavaScript' },
-  { name: 'HTML/CSS',   color: '#e44d26', docs: 'https://developer.mozilla.org/docs/Web' },
-  { name: 'Git',        color: '#f34f29', docs: 'https://git-scm.com/doc' },
-  { name: 'Figma',      color: '#a259ff', docs: 'https://help.figma.com' },
-  { name: 'REST API',   color: '#6366f1', docs: 'https://restfulapi.net' },
-  { name: 'Redux',      color: '#764abc', docs: 'https://redux.js.org' },
-  { name: 'Tailwind',   color: '#38bdf8', docs: 'https://tailwindcss.com/docs' },
-];
-
 export default function Skills() {
   const ref = useRef(null);
   const [vis, setVis] = useState(false);
