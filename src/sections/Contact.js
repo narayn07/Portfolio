@@ -47,7 +47,7 @@ export default function Contact() {
             </div>
           ))}
           <div className="contact-socials">
-            {[{ l: 'GitHub', h: 'https://github.com/narayn07' }, { l: 'LinkedIn', h: 'https://linkedin.com/in/naraynprabhu7' }, { l: 'Twitter', h: 'https://twitter.com' }, { l: 'Instagram', h: 'https://instagram.com/narayn_7' }].map(s => (
+            {[{ l: 'GitHub', h: 'https://github.com/narayn07/.' }, { l: 'LinkedIn', h: 'https://linkedin.com/in/naraynprabhu7/.' }, { l: 'Twitter', h: 'https://twitter.com/Narayn07/.' }, { l: 'Instagram', h: 'https://instagram.com/narayn_7/.' }].map(s => (
               <a key={s.l} href={s.h} target="_blank" rel="noreferrer" className="social-pill" data-hover="true">{s.l}</a>
             ))}
           </div>
