@@ -29,20 +29,20 @@ const logos = {
 };
 
 const techs = [
-  { name: 'React',      color: '#61dafb', docs: 'https://react.dev' },
-  { name: 'Node.js',    color: '#83cd29', docs: 'https://nodejs.org/docs' },
-  { name: 'Python',     color: '#3776ab', docs: 'https://docs.python.org' },
-  { name: 'Java',       color: '#ea2d2e', docs: 'https://docs.oracle.com/en/java' },
-  { name: 'MongoDB',    color: '#589636', docs: 'https://www.mongodb.com/docs' },
-  { name: 'MySQL',      color: '#00758f', docs: 'https://dev.mysql.com/doc' },
-  { name: 'TypeScript', color: '#3178c6', docs: 'https://www.typescriptlang.org/docs' },
-  { name: 'JavaScript', color: '#f7df1e', docs: 'https://developer.mozilla.org/docs/Web/JavaScript' },
-  { name: 'HTML/CSS',   color: '#e44d26', docs: 'https://developer.mozilla.org/docs/Web' },
-  { name: 'Git',        color: '#f34f29', docs: 'https://git-scm.com/doc' },
-  { name: 'Figma',      color: '#a259ff', docs: 'https://help.figma.com' },
-  { name: 'REST API',   color: '#6366f1', docs: 'https://restfulapi.net' },
-  { name: 'Redux',      color: '#764abc', docs: 'https://redux.js.org' },
-  { name: 'Tailwind',   color: '#38bdf8', docs: 'https://tailwindcss.com/docs' },
+  { name: 'React',      color: '#61dafb' },
+  { name: 'Node.js',    color: '#83cd29' },
+  { name: 'Python',     color: '#3776ab' },
+  { name: 'Java',       color: '#ea2d2e' },
+  { name: 'MongoDB',    color: '#589636' },
+  { name: 'MySQL',      color: '#00758f' },
+  { name: 'TypeScript', color: '#3178c6' },
+  { name: 'JavaScript', color: '#f7df1e' },
+  { name: 'HTML/CSS',   color: '#e44d26' },
+  { name: 'Git',        color: '#f34f29' },
+  { name: 'Figma',      color: '#a259ff' },
+  { name: 'REST API',   color: '#6366f1' },
+  { name: 'Redux',      color: '#764abc' },
+  { name: 'Tailwind',   color: '#38bdf8' },
 ];
 
 export default function Skills() {
@@ -88,8 +88,6 @@ export default function Skills() {
           {techs.map((t, i) => (
             <a
               key={t.name}
-              href={t.docs}
-              target="_blank"
               rel="noreferrer"
               className={`tech-logo-card reveal ${vis ? 'visible' : ''}`}
               style={{ '--tc': t.color, transitionDelay: `${i * 0.06 + 0.2}s` }}
