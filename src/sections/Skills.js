@@ -84,18 +84,18 @@ export default function Skills() {
         </div>
 
         {/* ── right: logo grid with doc links ── */}
-        <div className="tech-logo-grid">
-  {techs.map((t, i) => (
-    <div
-      key={t.name}
-      className={`tech-logo-card reveal ${vis ? 'visible' : ''}`}
-      style={{ '--tc': t.color, transitionDelay: `${i * 0.06 + 0.2}s` }}
-    >
-      <div className="tech-logo-icon">{logos[t.name]}</div>
-      <span className="tech-logo-name">{t.name}</span>
-    </div>
-  ))}
-</div>
+      <div className="tech-logo-grid">
+        {techs.map((t, i) => (
+          <div
+            key={t.name}
+            className={`tech-logo-card reveal ${vis ? 'visible' : ''}`}
+            style={{ '--tc': t.color, transitionDelay: `${i * 0.06 + 0.2}s` }}
+          >
+          <div className="tech-logo-icon">{logos[t.name]}</div>
+          <span className="tech-logo-name">{t.name}</span>
+         </div>
+        ))}
+        </div>
       </div>
     </section>
   );
