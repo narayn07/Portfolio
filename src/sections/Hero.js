@@ -59,9 +59,9 @@ export default function Hero() {
           </div>
           <div className="hero-socials fade-up" style={{ animationDelay: '0.75s' }}>
             {[
-              { label: 'GitHub',   href: 'https://github.com' },
-              { label: 'LinkedIn', href: 'https://linkedin.com' },
-              { label: 'Twitter',  href: 'https://twitter.com' },
+              { label: 'GitHub',   href: 'https://github.com/narayn07/.' },
+              { label: 'LinkedIn', href: 'https://linkedin.com/in/naraynprabhu7/.' },
+              { label: 'Twitter',  href: 'https://twitter.com/Narayn07/.' },
             ].map(s => (
               <a key={s.label} href={s.href} target="_blank" rel="noreferrer"
                 className="social-link" data-hover="true">{s.label}</a>
